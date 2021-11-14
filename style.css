@@ -2,12 +2,18 @@
 
 * {
     box-sizing: border-box;
+
+}
+:root {
+    --border-color:#3C99DC;
+    --fill-color:#66D3FA;
 }
 body {
     font-family: 'Roboto Mono', monospace;
     background-image: url("lionello-delpiccolo-qEswHvOmi1c-unsplash.jpg");
+    font-size: 22px;
     color: #fff;
-    font-weight: bold;
+    font-weight: bolder;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,16 +31,67 @@ h3 {
 }
 .cup {
     background-color:#fff;
-    border: 4px solid ;
+    border: 4px solid var(--border-color);
     border-radius: 0 0 30px 30px;
-    color: #fff;
-    height: 100px;
-    width: 30px;
+    color:#3C99DC;
+    height: 300px;
+    width: 150px;
     display: flex;
     margin: 30px 0;
     flex-direction: column;
     overflow: hidden;
 }
 .cup.cup-small {
+    height: 100px;
     width: 50px;
+    border-radius: 0 0 15px 15px;
+    background-color:#fff;
+    cursor: pointer;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+.cup.cup-small.full {
+    background-color: var(--fill-color);
+    color: #fff;
+}
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+.remained {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
+.remained span {
+    font-size: 22px;
+    font-weight: bold;
+}
+.remained small {
+    font-size: 15px;
+}
+.percentage {
+    background-color: var(--fill-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    height: 0;
+    transition: 0.3s ease;
+}
+.text {
+    text-align: center;
+    margin: 0 0 5px;
 }
