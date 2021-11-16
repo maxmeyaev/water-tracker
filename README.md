@@ -7,3 +7,6 @@
 npm install
 npm start
 ```
+
+## Live
+https://maxmeyaev.github.io/water-tracker/
