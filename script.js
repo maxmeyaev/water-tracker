@@ -31,7 +31,7 @@ function updateCup(){
         percentage.style.height = 0;
     } else {
         percentage.style.visibility = 'visible';
-        percentage.style.height = `${full_cups / total_cups * 240}px`;
+        percentage.style.height = `${full_cups / total_cups * 300}px`;
         percentage.innerText = `${Math.floor(full_cups / total_cups * 100)}%`;
     }
     if(full_cups === total_cups){
